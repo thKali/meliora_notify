@@ -20,7 +20,8 @@ const WHATSAPP_API_KEY = '1C6E75499C5B-42E3-8BDB-585C05F2726E';
 
 // Lista de números para receber notificações
 const NUMBERS_TO_NOTIFY = [
-  '5511972648356'
+  '5511972648356',
+  '5511957077700'
 ];
 
 // Função para enviar mensagem via WhatsApp
