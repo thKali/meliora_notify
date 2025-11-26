@@ -117,11 +117,24 @@ curl -X POST http://localhost:3000/notify \
 - **Memória em idle**: ~30-40MB
 - **Startup**: ~100ms
 
+## 📋 Eventos do Coolify Suportados
+
+✅ **Deployment Success** - Deploy concluído com sucesso  
+❌ **Deployment Failure** - Falha no deploy  
+💾 **Backup Failure** - Falha no backup  
+⏰ **Scheduled Task Failure** - Falha em tarefa agendada  
+🐳 **Docker Cleanup Failure** - Falha na limpeza Docker  
+💿 **Server Disk Usage** - Alerta de uso de disco  
+🔴 **Server Unreachable** - Servidor inalcançável  
+🧪 **Test** - Webhook de teste  
+
+Cada evento tem uma mensagem formatada específica e inteligente! 🎯
+
 ## 🔜 Próximos passos
 
-- [ ] Adicionar integração com email (Nodemailer)
-- [ ] Adicionar integração com Slack/Discord/Telegram
 - [ ] Adicionar autenticação (API Key)
 - [ ] Adicionar rate limiting
 - [ ] Adicionar fila de processamento (Bull/BullMQ)
+- [ ] Adicionar integração com email (Nodemailer)
+- [ ] Adicionar integração com Slack/Discord/Telegram
 
