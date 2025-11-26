@@ -6,8 +6,10 @@ API ultra leve de notificações com Fastify + Node.js Alpine.
 
 - ⚡ **Rápido**: Fastify + Node.js Alpine (~50MB)
 - 🐳 **Docker**: Pronto para deploy no Coolify
-- 📦 **Simples**: Apenas um webhook `/notify`
+- 📦 **Simples**: Webhook `/notify` que recebe notificações
+- 📱 **WhatsApp**: Envia mensagens automáticas para lista de números
 - 🔍 **Health check**: Endpoint `/health` incluído
+- 📊 **Logs estruturados**: Monitore tudo em JSON
 
 ## 📡 Endpoints
 
@@ -91,6 +93,11 @@ docker run -p 3000:3000 meliora-notify
 
 - `PORT`: Porta do servidor (default: 3000)
 - `HOST`: Host do servidor (default: 0.0.0.0)
+
+**Configurações no código** (`index.js`):
+- `WHATSAPP_API_URL`: URL da API do WhatsApp
+- `WHATSAPP_API_KEY`: Chave da API
+- `NUMBERS_TO_NOTIFY`: Array com números para notificar
 
 ## 📝 Exemplo de uso
 
