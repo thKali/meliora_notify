@@ -1,0 +1,17 @@
+{
+  "name": "meliora-notify",
+  "version": "1.0.0",
+  "description": "API leve de notificações com webhook /notify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["notify", "webhook", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.26.0"
+  }
+}
+
